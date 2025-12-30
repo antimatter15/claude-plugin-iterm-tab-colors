@@ -1,10 +1,12 @@
 # iTerm Tab Colors for Claude Code
 
+<img width="874" height="36" alt="image" src="https://github.com/user-attachments/assets/fe4412a0-9c82-4d88-b329-4be931051b0e" />
+
 Updates iTerm2 tab colors to correspond to Claude Code status. This makes it easy to see the status of your Claude sessions at a glance.
 
 It (mostly) works even without iTerm2 Python API enabled, by raising an error containing iTerm escape sequences to update the tab color. This however confusingly leads to messages like this appearing in your console:
 
-> SessionStart:startup says: Plugin hook "python3 /Users/kevin/Github/claude-plugins-official/external_plugins/iterm-tab-colors/scripts/set_tab_color.py 255 165 0" exited with code 1:
+> SessionStart:startup says: Plugin hook "python3 external_plugins/iterm-tab-colors/scripts/set_tab_color.py 255 165 0" exited with code 1:
 > Updated iTerm Tab Color (Enable the iTerm Python API in Settings > General > Magic > Enable Python API to hide this message)
 
 ### Enabling iTerm2 Python API
